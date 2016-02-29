@@ -1,0 +1,74 @@
+a:link, a:visited, a:hover, a:link:active, a:visited:active {
+    color: inherit;
+    outline: 0;
+    text-decoration: none;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: 'Toyota Display',sans-serif;
+	
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	height: 60px;
+	width: 100%;
+	background-color: #334048;
+	
+}
+
+.nav-container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0px 30px;
+}
+
+.container {
+	max-width: 960px;
+	margin: 90px auto;
+	padding: 0px 30px;
+}
+
+.homeicon {
+	display: inline-block;
+/*	margin: 10px 0;*/
+	margin: 0;
+	padding-top: 12px;
+	vertical-align: middle;
+	font-size: 30px;
+	color: #E0E7EE;
+}
+
+.homeicon a:hover {
+	color: #FFFFFF;
+}
+
+.nav-title {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	padding-top: 12px;
+	padding-left: 20px;
+	font-weight: normal;
+	letter-spacing: 0.5px;
+	font-size: 20px;
+	color: #E0E7EE;
+}
+
+.nav-title a:hover {
+	color: #FFFFFF;
+}
+
+.page-title {
+	margin: 0;
+	font-weight: bold;
+	font-size: 2em;
+	color: #1E2A32;
+	
+}
