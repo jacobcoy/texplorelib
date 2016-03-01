@@ -14,71 +14,6 @@ body {
 	
 }
 
-nav li {
-    list-style: none;
-}
-
-.none {
-    display: none;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: green;
-    opacity: 0.2;
-    z-index: 2;
-}
-
-.main-navigation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-top: 8px;
-    width: 225px;
-    height: 100%;
-    background: red;
-    opacity: 0.5;
-    transform: translateX(-100%);
-    transition: transform 0.6s ease;
-    z-index: 4;
-}
-
-.main-navigation.open {
-    transform: translateX(0);
-    
-}
-
-.main-navigation ul {
-    margin: 0;
-    padding: 0;
-}
-
-.main-navigation ul a{
-    padding: 10px 20px;
-    display: block;
-}
-
-
-
-
-.side-menu {
-/*    display: none;*/
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    width: 280px;
-    height: 100%;
-    background-color: #1D1F21;
-    margin: 0;
-    padding: 14px 30px;
-    transform: translateX(-px)
-}
-
-
 .nav {
 	position: fixed;
 	top: 0;
@@ -102,20 +37,11 @@ nav li {
 
 .homeicon {
 	display: inline-block;
+/*	margin: 10px 0;*/
 	margin: 0;
-	padding-top: 14px;
+	padding-top: 12px;
 	vertical-align: middle;
-	font-size: 25px;
-	color: #E0E7EE;
-}
-
-.menuicon {
-	display: inline-block;
-	margin: 0;
-	padding-top: 14px;
-    padding-right: 5px;
-	vertical-align: middle;
-	font-size: 25px;
+	font-size: 30px;
 	color: #E0E7EE;
 }
 
@@ -131,7 +57,7 @@ nav li {
 	padding-left: 20px;
 	font-weight: normal;
 	letter-spacing: 0.5px;
-	font-size: 17px;
+	font-size: 20px;
 	color: #E0E7EE;
 }
 
@@ -143,6 +69,6 @@ nav li {
 	margin: 0;
 	font-weight: bold;
 	font-size: 2em;
-/*	color: #1E2A32;*/
-    color: #334048;
+	color: #1E2A32;
+	
 }
