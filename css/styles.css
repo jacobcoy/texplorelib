@@ -28,8 +28,10 @@ nav li {
     left: 0;
     width: 100%;
     height: 100%;
-    background: green;
-    opacity: 0.2;
+/*
+    background: black;
+    opacity: 0.6;
+*/
     z-index: 2;
 }
 
@@ -40,11 +42,18 @@ nav li {
     padding-top: 8px;
     width: 225px;
     height: 100%;
-    background: red;
-    opacity: 0.5;
+    background: #353F46;
+/*    opacity: 0.5;*/
     transform: translateX(-100%);
     transition: transform 0.6s ease;
     z-index: 4;
+    overflow-y: auto;
+}
+
+.main-navigation.shadow {
+    -webkit-box-shadow: 5px 0px 25px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 0px 25px -1px rgba(0,0,0,0.75);
+    box-shadow: 5px 0px 25px -1px rgba(0,0,0,0.75);
 }
 
 .main-navigation.open {
@@ -55,36 +64,25 @@ nav li {
 .main-navigation ul {
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 .main-navigation ul a{
     padding: 10px 20px;
     display: block;
+    transition: background 0.4s ease;
 }
 
-
-
-
-.side-menu {
-/*    display: none;*/
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    width: 280px;
-    height: 100%;
-    background-color: #1D1F21;
-    margin: 0;
-    padding: 14px 30px;
-    transform: translateX(-px)
+.main-navigation ul a:hover{
+    background: #27323B;
 }
-
 
 .nav {
 	position: fixed;
 	top: 0;
 	height: 60px;
 	width: 100%;
-	background-color: #334048;
+	background-color: #27323B;
 	
 }
 
@@ -95,9 +93,14 @@ nav li {
 }
 
 .container {
-	max-width: 960px;
+	max-width: 880px;
 	margin: 90px auto;
 	padding: 0px 30px;
+}
+
+.text-container {
+    max-width: 840px;
+    margin: 0px auto;
 }
 
 .homeicon {
@@ -117,6 +120,11 @@ nav li {
 	vertical-align: middle;
 	font-size: 25px;
 	color: #E0E7EE;
+    cursor: pointer;
+}
+
+.menuicon:hover {
+    color: #FFFFFF;
 }
 
 .homeicon a:hover {
@@ -140,9 +148,51 @@ nav li {
 }
 
 .page-title {
-	margin: 0;
+    max-width: 600px;
+/*	margin: 0 auto;*/
+/*    margin: 20px 38px;*/
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 1.65em;
 /*	color: #1E2A32;*/
     color: #334048;
+}
+
+.body {
+    max-width: 600px;
+/*    margin: 20px 38px;*/
+    font-weight: normal;
+    font-size: 1em;
+    color: #222222;
+}
+
+.img-container {
+    max-width: 600px;
+    height: auto;
+    margin: 0px auto;
+}
+
+.img-scale {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+
+
+/*Media Queries */
+@media only screen and (max-width: 363px) {
+    .nav-container {
+        padding: 0px 15px;
+    }
+    
+    .container {
+        padding: 0px 15px;
+    }
+}
+
+@media only screen and (max-width: 332px) {
+    .nav-title {
+        padding-left: 5px;
+    }
 }
