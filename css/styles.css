@@ -11,7 +11,7 @@ html {
 
 body {
 	font-family: 'Toyota Display',sans-serif;
-	
+	color: inherit;
 }
 
 nav li {
@@ -75,8 +75,33 @@ nav li {
     transition: background 0.4s ease;
 }
 
+.inset{
+    padding: 0px 20px;
+    display: block;
+/*	background: red;*/
+    transition: background 0.4s ease;
+}
+
+.d-inset{
+	list-style: circle;
+    padding: 0px 30px;
+    display: block;
+/*	background: red;*/
+    transition: background 0.4s ease;
+}
+
+.dot {
+	display: inline-block;
+	background: white;
+	border-radius: 2em;
+	height: 4px;
+	width: 4px;
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
 .main-navigation ul a:hover{
-    background: #27323B;
+    background: #353F46;
 }
 
 .nav {
@@ -172,7 +197,9 @@ nav li {
     margin: 20px auto;
     font-weight: normal;
     font-size: 1em;
-    color: #222222;
+	color: #444444;
+	letter-spacing: 0.5px;
+	line-height: 1.6;
 }
 
 .lrg-img {
@@ -211,6 +238,43 @@ nav li {
 	
 }
 
+
+.btn-body {
+    max-width: 750px;
+	height: auto;
+    margin: 35px auto;
+}
+
+.red-btn{
+	display: inline-block;
+	padding: 10px 20px;
+    background-color: #d2001e;
+	-webkit-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    background-image: -webkit-gradient(linear,left 0,left 100%,from(#d2001e),to(#73000d));
+    background-image: -webkit-linear-gradient(top,#d2001e,0,#73000d,100%);
+    background-image: -moz-linear-gradient(top,#d2001e 0,#73000d 100%);
+    background-image: linear-gradient(to bottom,#d2001e 0,#73000d 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFD2001E', endColorstr='#FF73000D');
+}
+
+.red-btn:hover {
+	text-decoration: underline;
+	color: white;
+	background-image: -webkit-gradient(linear,left 0,left 100%,from(#73000d),to(#73000d));
+    background-image: -webkit-linear-gradient(top,#73000d,0,#73000d,100%);
+    background-image: -moz-linear-gradient(top,#73000d 0,#73000d 100%);
+    background-image: linear-gradient(to bottom,#73000d 0,#73000d 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF73000D', endColorstr='#FF73000D');
+}
+
+.red-btn span {
+	color: white;
+}
 
 /*Media Queries */
 
