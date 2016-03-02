@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Toyota Explore Module Library</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/ionicons.css">
+    <link href="http://vjs.zencdn.net/5.7.1/video-js.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
+</head>
+<body>
+    <div class="overlay nav-toggle none"></div>
+    <nav class="main-navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+					<li><a href="overview.html">Modules overview</a></li>
+                    <li><a href="configs.html">Configurators</a></li>
+                    <li><a href="360s.html">360° 3D</a></li>
+					<li><a href="spinners.html">Spinners</a></li>
+					<li><a href="textimage.html">Text &amp; Image</a></li>
+					<li><a href="videos.html"><span class="currentpage">Video</span></a></li>
+                    <li><a href="videoplayer.html"><span class="inset"><div class="dot"></div><span class="currentpage">Video Player</span></a></li>
+					<li><a href="videolauncher.html"><span class="inset"><div class="dot"></div>Video Launcher</span></a></li>
+					<li><a href="images.html">Image</a></li>
+                    <li><a href="appdownload.html">App Download</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+    <header class="nav">
+        <div class="nav-container">
+            <i class="menuicon icon ion-android-menu nav-toggle"></i>
+			<p class="nav-title"><a href="index.html">Toyota Explore Module Library</a></p>
+        </div>
+    </header>
+<!--
+	<div class="banner">
+		<div class="text-container">
+			<p class="banner-title">The Toyota Explore Module Library</p>
+			<p class="banner-sub">Discover the range of AR experiences avaliable</p>
+		</div>
+	</div>
+-->
+	<div class="header-spacer"></div>
+    <div class="container">
+        <p class="page-title">Video Player</p>
+        <div class="videowrapper">
+            <video id="my-video" class="vjs-16-9 video-js vjs-default-skin" controls preload="auto" width="auto" height="auto"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+    <source src="videos/aygo-fun.mp4" type='video/mp4'>
+    <source src="MY_VIDEO.webm" type='video/webm'>
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+            </video>
+        </div>
+        <p class="body">Video modules have one of the best reusable features of the app whilst still maintaing a new experience per car With the flexibitlity to display anything that can be rendered into a video in the app the user can be transported straight into the action with the RAV4 or zipping through the streets of the city in an Aygo. Or maybe you just wish to show a 3D representation of how much storage spac is avaliable in the boot when the seats are down, there is a wide breadth of content opportunities to exploit.</p>
+        <p class="body">When creating experiences for the car the app has two prebuilt solutions for handling video. An option to display auto playing full screen video with audio and also the option to launch into another module using a video. See the options below for examples of what can be achieved.</p>
+    </div>
+    <div class="container">
+        <p class="category-title"><a href="config.html">Varients Avaliable:</a></p>
+		<div class="grid-container">
+			<div class="grid-item">
+				<div class="grid-img"><a href="nohotspot.html"><img class="img-scale rounded" src="img/home-head.jpg"></a></div>
+				<a href="nohotspot.html"><p class="grid-title">Video Player<i class="gridarrow ion-chevron-right"></i></p></a>
+			</div>
+			<div class="grid-item">
+				<div class="grid-img"><a href="nohotspot.html"><img class="img-scale rounded" src="img/home-head.jpg"></a></div>
+				<a href="nohotspot.html"><p class="grid-title">Video launcher<i class="gridarrow ion-chevron-right"></i></p></a>
+			</div>
+		</div>
+    </div>
+    <script src="http://vjs.zencdn.net/5.7.1/video.js"></script>
+</body>
+
+</html>
