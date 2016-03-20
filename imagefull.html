@@ -27,10 +27,10 @@
                     <li><a href="360s.html">360° 3D</a></li>
 					<li><a href="spinners.html">Spinners</a></li>
 					<li><a href="textimage.html">Text &amp; Image</a></li>
-					<li><a href="videos.html"><span class="currentpage">Video</span></a></li>
-					<li><a href="videoplayer.html"><span class="inset"><div class="dot"></div><span class="currentpage">Video Player</span></span></a></li>
-<!--					<li><a href="videolauncher.html"><span class="inset"><div class="dot"></div>Video Launcher</span></a></li>-->
-					<li><a href="images.html">Image</a></li>
+					<li><a href="imgtxtstatic.html"><span class="inset"><div class="dot"></div>Static Content</span></a></li>
+					<li><a href="videos.html">Video</a></li>
+					<li><a href="images.html"><span class="currentpage">Image</span></a></li>
+                    <li><a href="imagefull.html"><span class="inset"><div class="dot"></div>Full Screen Images</span></a></li>
                     <li><a href="appdownload.html">App Download</a></li>
                 </ul>
             </div>
@@ -51,14 +51,14 @@
 -->
 	<div class="header-spacer"></div>
     <div class="container">
-        <p class="page-title">Video Player</p>
+        <p class="page-title">Full Screen images</p>
         <div class="videowrapper">
             <div class="time-rating">
-                <p class="body"><strong>Time to insert into app:</strong> 30 minutes depending on video length</p>
+                <p class="body"><strong>Time to insert into app:</strong> 20 minutes per image</p>
             </div>
             <video id="my-video" class="vjs-16-9 video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="auto" height="auto"
-  poster="videos/video-modules/full-screen-video.jpg" data-setup="{}">
-    <source src="videos/video-modules/full-screen-video.mp4" type='video/mp4'>
+  poster="videos/images/full-screen-images.jpg" data-setup="{}">
+    <source src="videos/images/full-screen-images.mp4" type='video/mp4'>
 <!--    <source src="MY_VIDEO.webm" type='video/webm'>-->
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a web browser that
@@ -67,15 +67,11 @@
             </video>
         </div>
         <p class="category-title">Functionality overview</p>
-        <p class="body">The video player in Toyota explore launches straight into the video when a page is detected. Playing the video full screen with audio (if the device isnt muted). When the video has ended the user is given the option to replay the video or return  to their previous location in the app.</p>
+        <p class="body">The full screen image module simply loads an image defined in the app filling the devices display. The module has basic attributes to define titles and has potential to display animated images by using an animated gif file.</p>
         <p class="category-title">Options when using this module</p>
-        <p class="body">Since the video player module is a self contained experience it can be used anywhere in the app that it can be launched from. The most basic use is by scanning a page to launch the video. Alternative options are whenever a standard hotspot is used in an experience. An example of this could be the user tapping on a hotspot in a config module to load a video then return to the config unit.</p>
+        <p class="body">When using the image module it is worth bearing in mind that the module is self contained and has no options to change content. As such it is best to use this module as a piece of hotspot content. When populating content it is possible to add a title to each image in order to give some definition and further structure. Since the background of this module is just a flat image it is possible to add further content so long as it is baked into the image itself, this creates further production times but does allow for lots of content variation.</p>
         <p class="category-title">Cars using this module</p>
         <div class="car-container">
-            <div class="car">
-                <img src="img/cars/aygo.png">
-                <p class="car-title">Aygo</p>
-            </div>
             <div class="car">
                 <img src="img/cars/auris.png">
                 <p class="car-title">Auris</p>
@@ -84,8 +80,25 @@
                 <img src="img/cars/avensis.png">
                 <p class="car-title">Avensis</p>
             </div>
+            <div class="car">
+                <img src="img/cars/aygo.png">
+                <p class="car-title">Aygo</p>
+            </div>
+            <div class="car">
+                <img src="img/cars/yaris.png">
+                <p class="car-title">Yaris</p>
+            </div>
+            <div class="car">
+                <img src="img/cars/rav4.png">
+                <p class="car-title">RAV4</p>
+            </div>
+            <div class="car">
+                <img src="img/cars/prius.png">
+                <p class="car-title">Prius</p>
+            </div>
+			
         </div>
-        <div class="btn-body"><a href="videos.html" class="red-btn"><span>Back to video modules</span></a></div>
+        <div class="btn-body"><a href="images.html" class="red-btn"><span>Back to Image modules</span></a></div>
     </div>
     <script src="http://vjs.zencdn.net/5.7.1/video.js"></script>
 </body>

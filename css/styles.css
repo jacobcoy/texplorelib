@@ -234,6 +234,12 @@ nav li {
 	line-height: 1.6;
 }
 
+.bodylink {
+	border-bottom: 1px solid #27323B;
+	font-weight: bold;
+	
+}
+
 .lrg-img {
     max-width: 900px;
     height: auto;
@@ -393,8 +399,33 @@ nav li {
     color: #27323B;
 }
 
+.btn-container {
+    max-width: 750px;
+    padding-top: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.dl-btn {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 150px;
+    height: auto;
+}
+
+.dl-btn:nth-child(1) {
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
 
 /*Media Queries */
+@media only screen and (max-width: 520px) {
+    .grid-item {
+	max-width: 100%;
+    }
+}
+
 
 @media only screen and (max-width: 430px) {
 	.banner-title {
